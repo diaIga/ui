@@ -569,7 +569,7 @@ function library:loader(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0.5,0.5),
-			BackgroundColor3 = Color3.fromRGB(168, 52, 235),
+			BackgroundColor3 = Color3.fromRGB(255, 255, 255), -- 168 52 235
 			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderSizePixel = 1,
 			Size = UDim2.new(0,300,0,90),

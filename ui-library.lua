@@ -162,7 +162,7 @@ function library:new(props)
 			BackgroundColor3 = color,
 			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderSizePixel = 1,
-			Size = UDim2.new(0,600,0,300), --790
+			Size = UDim2.new(0,600,0,435), --790
 			Position = UDim2.new(0.5,0,0.5,0),
 			Parent = screen
 		}
@@ -569,7 +569,7 @@ function library:loader(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0.5,0.5),
-			BackgroundColor3 = Color3.fromRGB(255, 255, 255), -- 168 52 235
+			BackgroundColor3 = Color3.fromRGB(87, 201, 53), -- 168 52 235
 			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderSizePixel = 1,
 			Size = UDim2.new(0,300,0,90),

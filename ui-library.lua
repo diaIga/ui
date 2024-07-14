@@ -136,7 +136,7 @@ function library:new(props)
 	local textsize = props.textsize or props.TextSize or props.textSize or props.Textsize or 12
 	local font = props.font or props.Font or "RobotoMono"
 	local name = props.name or props.Name or props.UiName or props.Uiname or props.uiName or props.username or props.Username or props.UserName or props.userName or "new ui"
-	local color = props.color or props.Color or props.mainColor or props.maincolor or props.MainColor or props.Maincolor or props.Accent or props.accent or Color3.fromRGB(255-225, 255-58, 255-81)
+	local color = props.color or props.Color or props.mainColor or props.maincolor or props.MainColor or props.Maincolor or props.Accent or props.accent or Color3.fromRGB(225, 58, 81)
 	-- // variables
 	local window = {}
 	-- // main
@@ -160,9 +160,9 @@ function library:new(props)
 		{
 			AnchorPoint = Vector2.new(0.5,0.5),
 			BackgroundColor3 = color,
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderSizePixel = 1,
-			Size = UDim2.new(0,600,0,350),
+			Size = UDim2.new(0,600,0,340),
 			Position = UDim2.new(0.5,0,0.5,0),
 			Parent = screen
 		}
@@ -172,8 +172,8 @@ function library:new(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0.5,0.5),
-			BackgroundColor3 = Color3.fromRGB(255, 255, 255),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,-4,1,-4),
 			Position = UDim2.new(0.5,0,0.5,0),
@@ -185,8 +185,8 @@ function library:new(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0.5,0.5),
-			BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(20, 20, 20),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -199,8 +199,8 @@ function library:new(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0.5,1),
-			BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(20, 20, 20),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,-10,1,-25),
@@ -224,8 +224,8 @@ function library:new(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0.5,0.5),
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -243,7 +243,7 @@ function library:new(props)
 			Position = UDim2.new(0.5,0,0,0),
 			Font = font,
 			Text = name,
-			TextColor3 = Color3.fromRGB(255-255,255-255,255-255),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextXAlignment = "Left",
 			TextSize = textsize,
 			TextStrokeTransparency = 0,
@@ -277,8 +277,8 @@ function library:new(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0.5,1),
-			BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(20, 20, 20),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,-20),
@@ -302,8 +302,8 @@ function library:new(props)
 	local outline4 = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(20, 20, 20),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -424,7 +424,7 @@ function library:watermark()
 		{
 			AnchorPoint = Vector2.new(1,0),
 			BackgroundColor3 = self.theme.accent,
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderSizePixel = 1,
 			Size = UDim2.new(0,300,0,26),
 			Position = UDim2.new(1,-10,0,10),
@@ -440,8 +440,8 @@ function library:watermark()
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0.5,0.5),
-			BackgroundColor3 = Color3.fromRGB(255, 255, 255),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,-4,1,-4),
 			Position = UDim2.new(0.5,0,0.5,0),
@@ -454,8 +454,8 @@ function library:watermark()
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0.5,0.5),
-			BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(20, 20, 20),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
 			Position = UDim2.new(0.5,0,0.5,0),
@@ -473,7 +473,7 @@ function library:watermark()
 			Position = UDim2.new(0.5,0,0,0),
 			Font = self.font,
 			Text = "",
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextXAlignment = "Left",
 			TextSize = self.textsize,
 			TextStrokeTransparency = 0,
@@ -569,8 +569,8 @@ function library:loader(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0.5,0.5),
-			BackgroundColor3 = Color3.fromRGB(255-168, 255-52, 255-235),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(168, 52, 235),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderSizePixel = 1,
 			Size = UDim2.new(0,300,0,90),
 			Position = UDim2.new(0.5,0,0.5,0),
@@ -584,8 +584,8 @@ function library:loader(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0.5,0.5),
-			BackgroundColor3 = Color3.fromRGB(255, 255, 255),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,-4,1,-4),
 			Position = UDim2.new(0.5,0,0.5,0),
@@ -598,8 +598,8 @@ function library:loader(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0.5,0.5),
-			BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(20, 20, 20),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
 			Position = UDim2.new(0.5,0,0.5,0),
@@ -617,7 +617,7 @@ function library:loader(props)
 			Position = UDim2.new(0.5,0,0,0),
 			Font = "RobotoMono",
 			Text = name,
-			TextColor3 = Color3.fromRGB(255-168, 255-52, 255-235),
+			TextColor3 = Color3.fromRGB(168, 52, 235),
 			TextXAlignment = "Center",
 			TextSize = 12,
 			TextStrokeTransparency = 0,
@@ -635,7 +635,7 @@ function library:loader(props)
 			Position = UDim2.new(0.5,0,0,20),
 			Font = "RobotoMono",
 			Text = "Script: "..scriptname,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255, 255, 255),
 			TextXAlignment = "Center",
 			TextSize = 12,
 			TextStrokeTransparency = 0,
@@ -658,8 +658,8 @@ function library:loader(props)
 		local button_outline = utility.new(
 			"Frame",
 			{
-				BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-				BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+				BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+				BorderColor3 = Color3.fromRGB(12, 12, 12),
 				BorderMode = "Inset",
 				BorderSizePixel = 1,
 				Position = UDim2.new(0,0,0,0),
@@ -672,8 +672,8 @@ function library:loader(props)
 		local button_outline2 = utility.new(
 			"Frame",
 			{
-				BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-				BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+				BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+				BorderColor3 = Color3.fromRGB(56, 56, 56),
 				BorderMode = "Inset",
 				BorderSizePixel = 1,
 				Position = UDim2.new(0,0,0,0),
@@ -687,7 +687,7 @@ function library:loader(props)
 			"Frame",
 			{
 				AnchorPoint = Vector2.new(0,0),
-				BackgroundColor3 = Color3.fromRGB(255-30, 255-30, 255-30),
+				BackgroundColor3 = Color3.fromRGB(30, 30, 30),
 				BorderSizePixel = 0,
 				Size = UDim2.new(1,0,0,0),
 				Position = UDim2.new(0,0,0,0),
@@ -699,7 +699,7 @@ function library:loader(props)
 		utility.new(
 			"UIGradient",
 			{
-				Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255-199, 255-191, 255-204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))},
+				Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 191, 204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))},
 				Rotation = 90,
 				Parent = button_color
 			}
@@ -713,7 +713,7 @@ function library:loader(props)
 				Size = UDim2.new(1,0,1,0),
 				Position = UDim2.new(0,0,0,0),
 				Text = name,
-				TextColor3 = Color3.fromRGB(0, 0, 0),
+				TextColor3 = Color3.fromRGB(255,255,255),
 				TextSize = 12,
 				TextStrokeTransparency = 0,
 				Font = "RobotoMono",
@@ -737,21 +737,21 @@ function library:loader(props)
 	login[1].Position = UDim2.new(0.5,0,0,62)
 	--
 	close[3].MouseButton1Down:Connect(function()
-		close[2].BorderColor3 = Color3.fromRGB(255-168, 255-52, 255-235)
+		close[2].BorderColor3 = Color3.fromRGB(168, 52, 235)
 		outline:TweenPosition(UDim2.new(-1.5,0,0.5,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quad,0.75,true)
 		closed()
 		wait(0.05)
-		close[2].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+		close[2].BorderColor3 = Color3.fromRGB(12,12,12)
 		wait(0.7)
 		screen:Remove()
 	end)
 	--
 	login[3].MouseButton1Down:Connect(function()
-		login[2].BorderColor3 = Color3.fromRGB(255-168, 255-52, 255-235)
+		login[2].BorderColor3 = Color3.fromRGB(168, 52, 235)
 		outline:TweenPosition(UDim2.new(1.5,0,0.5,0),Enum.EasingDirection.Out,Enum.EasingStyle.Quad,0.75,true)
 		logedin()
 		wait(0.05)
-		login[2].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+		login[2].BorderColor3 = Color3.fromRGB(12,12,12)
 		wait(0.7)
 		screen:Remove()
 	end)
@@ -874,8 +874,8 @@ function library:page(props)
 	local tabbutton = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(20, 20, 20),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(0,75,1,0),
@@ -886,8 +886,8 @@ function library:page(props)
 	local outline = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -911,7 +911,7 @@ function library:page(props)
 	local r_line = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(56, 56, 56),
 			BorderSizePixel = 0,
 			Size = UDim2.new(0,1,0,1),
 			Position = UDim2.new(1,0,1,1),
@@ -924,7 +924,7 @@ function library:page(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(1,0),
-			BackgroundColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(56, 56, 56),
 			BorderSizePixel = 0,
 			Size = UDim2.new(0,1,0,1),
 			Position = UDim2.new(0,0,1,1),
@@ -936,7 +936,7 @@ function library:page(props)
 	local line = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
 			BorderSizePixel = 0,
 			Size = UDim2.new(1,0,0,2),
 			Position = UDim2.new(0,0,1,0),
@@ -953,7 +953,7 @@ function library:page(props)
 			Position = UDim2.new(0,0,0,0),
 			Font = self.font,
 			Text = name,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.textsize,
 			TextStrokeTransparency = 0,
 			Parent = outline
@@ -982,7 +982,7 @@ function library:page(props)
 			AutomaticCanvasSize = "Y",
 			CanvasSize = UDim2.new(0,0,0,0),
 			ScrollBarImageTransparency = 1,
-			ScrollBarImageColor3 = Color3.fromRGB(255, 255, 255),
+			ScrollBarImageColor3 = Color3.fromRGB(0,0,0),
 			ScrollBarThickness = 0,
 			ClipsDescendants = false,
 			VerticalScrollBarInset = "None",
@@ -1011,7 +1011,7 @@ function library:page(props)
 			AutomaticCanvasSize = "Y",
 			CanvasSize = UDim2.new(0,0,0,0),
 			ScrollBarImageTransparency = 1,
-			ScrollBarImageColor3 = Color3.fromRGB(255, 255, 255),
+			ScrollBarImageColor3 = Color3.fromRGB(0,0,0),
 			ScrollBarThickness = 0,
 			ClipsDescendants = false,
 			VerticalScrollBarInset = "None",
@@ -1051,9 +1051,9 @@ function library:page(props)
 					if v.open then
 						v.page.Visible = false
 						v.open = false
-						v.outline.BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24)
+						v.outline.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
 						v.line.Size = UDim2.new(1,0,0,2)
-						v.line.BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24)
+						v.line.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
 					end
 				end
 			end
@@ -1062,9 +1062,9 @@ function library:page(props)
 			--
 			page.page.Visible = true
 			page.open = true
-			page.outline.BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20)
+			page.outline.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 			page.line.Size = UDim2.new(1,0,0,3)
-			page.line.BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20)
+			page.line.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 		end
 	end)
 	--
@@ -1089,18 +1089,18 @@ function pages:openpage()
 				if v.open then
 					v.page.Visible = false
 					v.open = false
-					v.outline.BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24)
+					v.outline.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
 					v.line.Size = UDim2.new(1,0,0,2)
-					v.line.BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24)
+					v.line.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
 				end
 			end
 		end
 		--
 		page.page.Visible = true
 		page.open = true
-		page.outline.BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20)
+		page.outline.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 		page.line.Size = UDim2.new(1,0,0,3)
-		page.line.BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20)
+		page.line.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 	end
 end
 --
@@ -1116,8 +1116,8 @@ function pages:section(props)
 	local sectionholder = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,0,size),
@@ -1128,8 +1128,8 @@ function pages:section(props)
 	local outline = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -1171,7 +1171,7 @@ function pages:section(props)
 			Position = UDim2.new(0,5,0,0),
 			Font = self.library.font,
 			Text = name,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Left",
@@ -1222,8 +1222,8 @@ function pages:multisection(props)
 	local sectionholder = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,0,size),
@@ -1234,8 +1234,8 @@ function pages:multisection(props)
 	local outline = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -1277,7 +1277,7 @@ function pages:multisection(props)
 			Position = UDim2.new(0,5,0,0),
 			Font = self.library.font,
 			Text = name,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Left",
@@ -1301,8 +1301,8 @@ function pages:multisection(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0.5,1),
-			BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(20, 20, 20),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,-6,1,-27),
@@ -1324,8 +1324,8 @@ function pages:multisection(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0,0),
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -1368,8 +1368,8 @@ function multisections:section(props)
 	local tabbutton = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(20, 20, 20),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(0,60,0,20),
@@ -1380,8 +1380,8 @@ function multisections:section(props)
 	local outline = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(20, 20, 20),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -1405,7 +1405,7 @@ function multisections:section(props)
 	local r_line = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(56, 56, 56),
 			BorderSizePixel = 0,
 			Size = UDim2.new(0,1,0,1),
 			Position = UDim2.new(1,0,1,1),
@@ -1418,7 +1418,7 @@ function multisections:section(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(1,0),
-			BackgroundColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(56, 56, 56),
 			BorderSizePixel = 0,
 			Size = UDim2.new(0,1,0,1),
 			Position = UDim2.new(0,0,1,1),
@@ -1430,7 +1430,7 @@ function multisections:section(props)
 	local line = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20),
+			BackgroundColor3 = Color3.fromRGB(20, 20, 20),
 			BorderSizePixel = 0,
 			Size = UDim2.new(1,0,0,2),
 			Position = UDim2.new(0,0,1,0),
@@ -1447,7 +1447,7 @@ function multisections:section(props)
 			Position = UDim2.new(0,0,0,0),
 			Font = self.library.font,
 			Text = name,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			Parent = outline
@@ -1495,9 +1495,9 @@ function multisections:section(props)
 					if v.open then
 						v.page.Visible = false
 						v.open = false
-						v.outline.BackgroundColor3 = Color3.fromRGB(255-31, 255-31, 255-31)
+						v.outline.BackgroundColor3 = Color3.fromRGB(31, 31 ,31)
 						v.line.Size = UDim2.new(1,0,0,2)
-						v.line.BackgroundColor3 = Color3.fromRGB(255-31, 255-31, 255-31)
+						v.line.BackgroundColor3 = Color3.fromRGB(31, 31 ,31)
 					end
 				end
 			end
@@ -1506,9 +1506,9 @@ function multisections:section(props)
 			--
 			mssection.content.Visible = true
 			mssection.open = true
-			mssection.outline.BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24)
+			mssection.outline.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
 			mssection.line.Size = UDim2.new(1,0,0,3)
-			mssection.line.BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24)
+			mssection.line.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
 		end
 	end)
 	--
@@ -1546,8 +1546,8 @@ function sections:toggle(props)
 	local outline = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(0,15,0,15),
@@ -1575,7 +1575,7 @@ function sections:toggle(props)
 			Position = UDim2.new(0,20,0,0),
 			Font = self.library.font,
 			Text = name,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Left",
@@ -1592,7 +1592,7 @@ function sections:toggle(props)
 		"Frame",
 		{
 			BackgroundColor3 = col,
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -1606,7 +1606,7 @@ function sections:toggle(props)
 	utility.new(
 		"UIGradient",
 		{
-			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255-199, 255-191, 255-204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))},
+			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 191, 204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))},
 			Rotation = 90,
 			Parent = color
 		}
@@ -1624,7 +1624,7 @@ function sections:toggle(props)
 	button.MouseButton1Down:Connect(function()
 		if toggle.current then
 			toggle.callback(false)
-			toggle.color.BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20)
+			toggle.color.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 			local find = table.find(self.library.themeitems["accent"]["BackgroundColor3"],toggle.color)
 			if find then
 				table.remove(self.library.themeitems["accent"]["BackgroundColor3"],find)
@@ -1661,7 +1661,7 @@ function toggles:set(bool)
 			toggle.color.BackgroundColor3 = self.library.theme.accent
 			table.insert(self.library.themeitems["accent"]["BackgroundColor3"],toggle.color)
 		else
-			toggle.color.BackgroundColor3 = Color3.fromRGB(255-20, 255-20, 255-20)
+			toggle.color.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 			local find = table.find(self.library.themeitems["accent"]["BackgroundColor3"],toggle.color)
 			if find then
 				table.remove(self.library.themeitems["accent"]["BackgroundColor3"],find)
@@ -1689,8 +1689,8 @@ function sections:button(props)
 	local outline = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -1701,8 +1701,8 @@ function sections:button(props)
 	local outline2 = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -1713,7 +1713,7 @@ function sections:button(props)
 	local color = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-30, 255-30, 255-30),
+			BackgroundColor3 = Color3.fromRGB(30, 30, 30),
 			BorderSizePixel = 0,
 			Size = UDim2.new(1,0,1,0),
 			Parent = outline2
@@ -1723,7 +1723,7 @@ function sections:button(props)
 	local gradient = utility.new(
 		"UIGradient",
 		{
-			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255-199, 255-191, 255-204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))},
+			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 191, 204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))},
 			Rotation = 90,
 			Parent = color
 		}
@@ -1737,7 +1737,7 @@ function sections:button(props)
 			Size = UDim2.new(1,0,1,0),
 			Position = UDim2.new(0,0,0,0),
 			Text = name,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			Font = self.library.font,
@@ -1750,7 +1750,7 @@ function sections:button(props)
 		outline.BorderColor3 = self.library.theme.accent
 		table.insert(self.library.themeitems["accent"]["BorderColor3"],outline)
 		wait(0.05)
-		outline.BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12)
+		outline.BorderColor3 = Color3.fromRGB(12, 12, 12)
 		local find = table.find(self.library.themeitems["accent"]["BorderColor3"],outline)
 		if find then
 			table.remove(self.library.themeitems["accent"]["BorderColor3"],find)
@@ -1793,8 +1793,8 @@ function sections:slider(props)
 	local outline = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,0,12),
@@ -1806,8 +1806,8 @@ function sections:slider(props)
 	local outline2 = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-30, 255-30, 255-30),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(30, 30, 30),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -1823,7 +1823,7 @@ function sections:slider(props)
 			Position = UDim2.new(0,0,0.5,0),
 			Font = self.library.font,
 			Text = def..measurement.."/"..max..measurement,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			ZIndex = 3,
@@ -1834,7 +1834,7 @@ function sections:slider(props)
 	local color = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-30, 255-30, 255-30),
+			BackgroundColor3 = Color3.fromRGB(30, 30, 30),
 			BorderSizePixel = 0,
 			Size = UDim2.new(1,0,1,0),
 			Parent = outline2
@@ -1844,7 +1844,7 @@ function sections:slider(props)
 	utility.new(
 		"UIGradient",
 		{
-			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255-199, 255-191, 255-204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))},
+			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 191, 204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))},
 			Rotation = 90,
 			Parent = color
 		}
@@ -1865,7 +1865,7 @@ function sections:slider(props)
 	utility.new(
 		"UIGradient",
 		{
-			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255-199, 255-191, 255-204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))},
+			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 191, 204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))},
 			Rotation = 90,
 			Parent = slide
 		}
@@ -1891,7 +1891,7 @@ function sections:slider(props)
 			Position = UDim2.new(0,0,0,0),
 			Font = self.library.font,
 			Text = name,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Left",
@@ -1958,7 +1958,7 @@ function sections:slider(props)
 	uis.InputEnded:Connect(function(Input)
 		if Input.UserInputType.Name == 'MouseButton1' and slider.holding then
 			slider.holding = false
-			outline.BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12)
+			outline.BorderColor3 = Color3.fromRGB(12, 12, 12)
 			local find = table.find(self.library.themeitems["accent"]["BorderColor3"],outline)
 			if find then
 				table.remove(self.library.themeitems["accent"]["BorderColor3"],find)
@@ -2073,8 +2073,8 @@ function sections:dropdown(props)
 	local outline = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,0,20),
@@ -2086,8 +2086,8 @@ function sections:dropdown(props)
 	local outline2 = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -2099,7 +2099,7 @@ function sections:dropdown(props)
 	local color = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-30, 255-30, 255-30),
+			BackgroundColor3 = Color3.fromRGB(30, 30, 30),
 			BorderSizePixel = 0,
 			Size = UDim2.new(1,0,1,0),
 			Position = UDim2.new(0,0,0,0),
@@ -2110,7 +2110,7 @@ function sections:dropdown(props)
 	utility.new(
 		"UIGradient",
 		{
-			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255-199, 255-191, 255-204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))},
+			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 191, 204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))},
 			Rotation = 90,
 			Parent = color
 		}
@@ -2125,7 +2125,7 @@ function sections:dropdown(props)
 			Position = UDim2.new(0,5,0,0),
 			Font = self.library.font,
 			Text = def,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Left",
@@ -2143,7 +2143,7 @@ function sections:dropdown(props)
 			Position = UDim2.new(0.5,0,0,0),
 			Font = self.library.font,
 			Text = "+",
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Right",
@@ -2160,7 +2160,7 @@ function sections:dropdown(props)
 			Position = UDim2.new(0,0,0,0),
 			Font = self.library.font,
 			Text = name,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Left",
@@ -2184,7 +2184,7 @@ function sections:dropdown(props)
 		"Frame",
 		{
 			BackgroundTransparency = 1,
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,0,20),
@@ -2201,8 +2201,8 @@ function sections:dropdown(props)
 	local optionsoutline = utility.new(
 		"ScrollingFrame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(56, 56, 56),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,size,2),
@@ -2210,7 +2210,7 @@ function sections:dropdown(props)
 			ClipsDescendants = true,
 			CanvasSize = UDim2.new(0,0,0,18*#options),
 			ScrollBarImageTransparency = 0.25,
-			ScrollBarImageColor3 = Color3.fromRGB(255, 255, 255),
+			ScrollBarImageColor3 = Color3.fromRGB(0,0,0),
 			ScrollBarThickness = 5,
 			VerticalScrollBarInset = "ScrollBar",
 			VerticalScrollBarPosition = "Right",
@@ -2264,7 +2264,7 @@ function sections:dropdown(props)
 				Position = UDim2.new(0.5,0,0,0),
 				Font = self.library.font,
 				Text = v,
-				TextColor3 = Color3.fromRGB(0, 0, 0),
+				TextColor3 = Color3.fromRGB(255,255,255),
 				TextSize = self.library.textsize,
 				TextStrokeTransparency = 0,
 				TextXAlignment = "Left",
@@ -2286,7 +2286,7 @@ function sections:dropdown(props)
 			indicator.Text = "+"
 			for z,x in pairs(dropdown.titles) do
 				if x.TextColor3 == self.library.theme.accent then
-					x.TextColor3 = Color3.fromRGB(0, 0, 0)
+					x.TextColor3 = Color3.fromRGB(255,255,255)
 				end
 			end
 			dropdown.current = v
@@ -2303,7 +2303,7 @@ function sections:dropdown(props)
 			if v.Text == dropdown.current then
 				v.TextColor3 = dropdown.library.theme.accent
 			else
-				v.TextColor3 = Color3.fromRGB(0, 0, 0)
+				v.TextColor3 = Color3.fromRGB(255,255,255)
 			end
 		end
 		optionsholder.Visible = not dropdown.open
@@ -2353,8 +2353,8 @@ function sections:buttonbox(props)
 	local outline = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,0,20),
@@ -2366,8 +2366,8 @@ function sections:buttonbox(props)
 	local outline2 = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -2379,7 +2379,7 @@ function sections:buttonbox(props)
 	local color = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-30, 255-30, 255-30),
+			BackgroundColor3 = Color3.fromRGB(30, 30, 30),
 			BorderSizePixel = 0,
 			Size = UDim2.new(1,0,1,0),
 			Position = UDim2.new(0,0,0,0),
@@ -2390,7 +2390,7 @@ function sections:buttonbox(props)
 	utility.new(
 		"UIGradient",
 		{
-			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255-199, 255-191, 255-204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))},
+			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 191, 204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))},
 			Rotation = 90,
 			Parent = color
 		}
@@ -2405,7 +2405,7 @@ function sections:buttonbox(props)
 			Position = UDim2.new(0.5,0,0,0),
 			Font = self.library.font,
 			Text = "+",
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Right",
@@ -2422,7 +2422,7 @@ function sections:buttonbox(props)
 			Position = UDim2.new(0,0,0,0),
 			Font = self.library.font,
 			Text = name,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Left",
@@ -2446,7 +2446,7 @@ function sections:buttonbox(props)
 		"Frame",
 		{
 			BackgroundTransparency = 1,
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,0,20),
@@ -2463,8 +2463,8 @@ function sections:buttonbox(props)
 	local optionsoutline = utility.new(
 		"ScrollingFrame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(56, 56, 56),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,size,2),
@@ -2472,7 +2472,7 @@ function sections:buttonbox(props)
 			ClipsDescendants = true,
 			CanvasSize = UDim2.new(0,0,0,18*#options),
 			ScrollBarImageTransparency = 0.25,
-			ScrollBarImageColor3 = Color3.fromRGB(255, 255, 255),
+			ScrollBarImageColor3 = Color3.fromRGB(0,0,0),
 			ScrollBarThickness = 5,
 			VerticalScrollBarInset = "ScrollBar",
 			VerticalScrollBarPosition = "Right",
@@ -2525,7 +2525,7 @@ function sections:buttonbox(props)
 				Position = UDim2.new(0.5,0,0,0),
 				Font = self.library.font,
 				Text = v,
-				TextColor3 = Color3.fromRGB(0, 0, 0),
+				TextColor3 = Color3.fromRGB(255,255,255),
 				TextSize = self.library.textsize,
 				TextStrokeTransparency = 0,
 				TextXAlignment = "Left",
@@ -2584,7 +2584,7 @@ function dropdowns:set(value)
 				if x.Text == value then
 					x.TextColor3 = dropdown.library.theme.accent
 				else
-					x.TextColor3 = Color3.fromRGB(0, 0, 0)
+					x.TextColor3 = Color3.fromRGB(255,255,255)
 				end
 			end
 		end
@@ -2628,8 +2628,8 @@ function sections:multibox(props)
 	local outline = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,0,20),
@@ -2641,8 +2641,8 @@ function sections:multibox(props)
 	local outline2 = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -2654,7 +2654,7 @@ function sections:multibox(props)
 	local color = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-30, 255-30, 255-30),
+			BackgroundColor3 = Color3.fromRGB(30, 30, 30),
 			BorderSizePixel = 0,
 			Size = UDim2.new(1,0,1,0),
 			Position = UDim2.new(0,0,0,0),
@@ -2665,7 +2665,7 @@ function sections:multibox(props)
 	utility.new(
 		"UIGradient",
 		{
-			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255-199, 255-191, 255-204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))},
+			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 191, 204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))},
 			Rotation = 90,
 			Parent = color
 		}
@@ -2680,7 +2680,7 @@ function sections:multibox(props)
 			Position = UDim2.new(0,5,0,0),
 			Font = self.library.font,
 			Text = defstr,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Left",
@@ -2698,7 +2698,7 @@ function sections:multibox(props)
 			Position = UDim2.new(0.5,0,0,0),
 			Font = self.library.font,
 			Text = "+",
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Right",
@@ -2715,7 +2715,7 @@ function sections:multibox(props)
 			Position = UDim2.new(0,0,0,0),
 			Font = self.library.font,
 			Text = name,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Left",
@@ -2739,7 +2739,7 @@ function sections:multibox(props)
 		"Frame",
 		{
 			BackgroundTransparency = 1,
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,0,20),
@@ -2756,8 +2756,8 @@ function sections:multibox(props)
 	local optionsoutline = utility.new(
 		"ScrollingFrame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(56, 56, 56),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,size,2),
@@ -2765,7 +2765,7 @@ function sections:multibox(props)
 			ClipsDescendants = true,
 			CanvasSize = UDim2.new(0,0,0,18*#options),
 			ScrollBarImageTransparency = 0.25,
-			ScrollBarImageColor3 = Color3.fromRGB(255, 255, 255),
+			ScrollBarImageColor3 = Color3.fromRGB(0,0,0),
 			ScrollBarThickness = 5,
 			VerticalScrollBarInset = "ScrollBar",
 			VerticalScrollBarPosition = "Right",
@@ -2818,7 +2818,7 @@ function sections:multibox(props)
 				Position = UDim2.new(0.5,0,0,0),
 				Font = self.library.font,
 				Text = v,
-				TextColor3 = Color3.fromRGB(0, 0, 0),
+				TextColor3 = Color3.fromRGB(255,255,255),
 				TextSize = self.library.textsize,
 				TextStrokeTransparency = 0,
 				TextXAlignment = "Left",
@@ -2873,7 +2873,7 @@ function sections:multibox(props)
 					end
 				end
 				value.Text = str
-				ddoptiontitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+				ddoptiontitle.TextColor3 = Color3.fromRGB(255,255,255)
 				multibox.callback(multibox.current)
 			end
 		end)
@@ -2882,7 +2882,7 @@ function sections:multibox(props)
 	dropdownbutton.MouseButton1Down:Connect(function()
 		multibox.library:closewindows(multibox)
 		for i,v in pairs(multibox.titles) do
-			if v.TextColor3 ~= Color3.fromRGB(0, 0, 0) then
+			if v.TextColor3 ~= Color3.fromRGB(255,255,255) then
 				v.TextColor3 = self.library.theme.accent
 			end
 		end
@@ -2933,7 +2933,7 @@ function multiboxs:set(tbl)
 			--
 			for i,v in pairs(multibox.titles) do
 				if v.TextColor3 == multibox.library.theme.accent then
-					v.TextColor3 = Color3.fromRGB(0, 0, 0)
+					v.TextColor3 = Color3.fromRGB(255,255,255)
 				end
 				if table.find(tbl,v.Text) then
 					v.TextColor3 = multibox.library.theme.accent
@@ -2982,8 +2982,8 @@ function sections:textbox(props)
 	local outline = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,0,20),
@@ -2995,8 +2995,8 @@ function sections:textbox(props)
 	local outline2 = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -3007,7 +3007,7 @@ function sections:textbox(props)
 	local color = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-30, 255-30, 255-30),
+			BackgroundColor3 = Color3.fromRGB(30, 30, 30),
 			BorderSizePixel = 0,
 			Size = UDim2.new(1,0,1,0),
 			Parent = outline2
@@ -3017,7 +3017,7 @@ function sections:textbox(props)
 	local gradient = utility.new(
 		"UIGradient",
 		{
-			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255-199, 255-191, 255-204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))},
+			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 191, 204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))},
 			Rotation = 90,
 			Parent = color
 		}
@@ -3031,7 +3031,7 @@ function sections:textbox(props)
 			Size = UDim2.new(1,0,1,0),
 			Position = UDim2.new(0,0,0,0),
 			Text = "",
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			Font = self.library.font,
@@ -3047,7 +3047,7 @@ function sections:textbox(props)
 			Position = UDim2.new(0,0,0,0),
 			Font = self.library.font,
 			Text = name,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Left",
@@ -3064,7 +3064,7 @@ function sections:textbox(props)
 			Position = UDim2.new(0.5,0,0,15),
 			PlaceholderText = placeholder,
 			Text = def,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextTruncate = "AtEnd",
@@ -3172,8 +3172,8 @@ function sections:keybind(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(1,0),
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(0,40,1,0),
@@ -3185,8 +3185,8 @@ function sections:keybind(props)
 	local outline2 = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -3203,7 +3203,7 @@ function sections:keybind(props)
 			Position = UDim2.new(0,0,0,0),
 			Font = self.library.font,
 			Text = default,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Center",
@@ -3216,7 +3216,7 @@ function sections:keybind(props)
 	local color = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-30, 255-30, 255-30),
+			BackgroundColor3 = Color3.fromRGB(30, 30, 30),
 			BorderSizePixel = 0,
 			Size = UDim2.new(1,0,1,0),
 			Position = UDim2.new(0,0,0,0),
@@ -3227,7 +3227,7 @@ function sections:keybind(props)
 	utility.new(
 		"UIGradient",
 		{
-			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255-199, 255-191, 255-204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))},
+			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 191, 204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))},
 			Rotation = 90,
 			Parent = color
 		}
@@ -3241,7 +3241,7 @@ function sections:keybind(props)
 			Size = UDim2.new(1,0,1,0),
 			Position = UDim2.new(0,0,0,0),
 			Text = "",
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			Font = self.library.font,
@@ -3257,7 +3257,7 @@ function sections:keybind(props)
 			Position = UDim2.new(0,0,0,0),
 			Font = self.library.font,
 			Text = name,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Left",
@@ -3288,7 +3288,7 @@ function sections:keybind(props)
 	button.MouseButton2Down:Connect(function()
 		keybind.down = false
 		keybind.current = {nil,nil}
-		outline.BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12)
+		outline.BorderColor3 = Color3.fromRGB(12, 12, 12)
 		local find = table.find(self.library.themeitems["accent"]["BorderColor3"],outline)
 		if find then
 			table.remove(self.library.themeitems["accent"]["BorderColor3"],find)
@@ -3301,7 +3301,7 @@ function sections:keybind(props)
 		outline.Size = UDim2.new(0,value.TextBounds.X+20,1,0)
 		keybind.down = false
 		keybind.current = {typeis,utility.splitenum(current)}
-		outline.BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12)
+		outline.BorderColor3 = Color3.fromRGB(12, 12, 12)
 		local find = table.find(self.library.themeitems["accent"]["BorderColor3"],outline)
 		if find then
 			table.remove(self.library.themeitems["accent"]["BorderColor3"],find)
@@ -3400,7 +3400,7 @@ function keybinds:set(key)
 			--
 			if keybind.down then
 				keybind.down = false
-				keybind.outline.BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12)
+				keybind.outline.BorderColor3 = Color3.fromRGB(12, 12, 12)
 				local find = table.find(self.library.themeitems["accent"]["BorderColor3"],keybind.outline)
 				if find then
 					table.remove(self.library.themeitems["accent"]["BorderColor3"],find)
@@ -3414,7 +3414,7 @@ function sections:colorpicker(props)
 	-- // properties
 	local name = props.name or props.Name or "new colorpicker"
 	local cpname = props.cpname or props.Cpname or props.CPname or props.CPName or props.cPname or props.cpName or props.colorpickername or nil
-	local def = props.def or props.Def or props.default or props.Default or Color3.fromRGB(0, 0, 0)
+	local def = props.def or props.Def or props.default or props.Default or Color3.fromRGB(255,255,255)
 	local callback = props.callback or props.callBack or props.CallBack or props.Callback or function()end
 	--
 	local h,s,v = def:ToHSV()
@@ -3435,8 +3435,8 @@ function sections:colorpicker(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(1,0),
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(0,30,1,0),
@@ -3448,8 +3448,8 @@ function sections:colorpicker(props)
 	local outline2 = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -3470,7 +3470,7 @@ function sections:colorpicker(props)
 	utility.new(
 		"UIGradient",
 		{
-			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255-199, 255-191, 255-204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))},
+			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 191, 204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))},
 			Rotation = 90,
 			Parent = cpcolor
 		}
@@ -3484,7 +3484,7 @@ function sections:colorpicker(props)
 			Position = UDim2.new(0,0,0,0),
 			Font = self.library.font,
 			Text = name,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Left",
@@ -3500,7 +3500,7 @@ function sections:colorpicker(props)
 			Size = UDim2.new(1,0,1,0),
 			Position = UDim2.new(0,0,0,0),
 			Text = "",
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			Font = self.library.font,
@@ -3512,8 +3512,8 @@ function sections:colorpicker(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0,0),
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,0,230),
@@ -3527,8 +3527,8 @@ function sections:colorpicker(props)
 	local outline2 = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -3561,7 +3561,7 @@ function sections:colorpicker(props)
 			Position = UDim2.new(0.5,0,0,0),
 			Font = self.library.font,
 			Text = cpname or name,
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Left",
@@ -3574,8 +3574,8 @@ function sections:colorpicker(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0,0),
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(0.875,0,0,150),
@@ -3589,7 +3589,7 @@ function sections:colorpicker(props)
 		"Frame",
 		{
 			BackgroundColor3 = Color3.fromHSV(h,1,1),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -3629,8 +3629,8 @@ function sections:colorpicker(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(1,0),
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(0.05,0,0,150),
@@ -3643,8 +3643,8 @@ function sections:colorpicker(props)
 	local outline4 = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(0, 0, 0),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -3661,7 +3661,7 @@ function sections:colorpicker(props)
 			Size = UDim2.new(1,0,1,0),
 			Position = UDim2.new(0,0,0,0),
 			Text = "",
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			Font = self.library.font,
@@ -3673,7 +3673,7 @@ function sections:colorpicker(props)
 	utility.new(
 		"UIGradient",
 		{
-			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 255-4)), ColorSequenceKeypoint.new(0.10, Color3.fromRGB(0, 255-153, 255)), ColorSequenceKeypoint.new(0.20, Color3.fromRGB(255-209, 0, 255)), ColorSequenceKeypoint.new(0.30, Color3.fromRGB(255-55, 0, 255)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(255, 0, 255-102)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.60, Color3.fromRGB(255, 255-102, 0)), ColorSequenceKeypoint.new(0.70, Color3.fromRGB(255-51, 255, 0)), ColorSequenceKeypoint.new(0.80, Color3.fromRGB(255-204, 255, 0)), ColorSequenceKeypoint.new(0.90, Color3.fromRGB(0, 255, 255-153)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 255-4))},
+			Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(0.10, Color3.fromRGB(255, 153, 0)), ColorSequenceKeypoint.new(0.20, Color3.fromRGB(209, 255, 0)), ColorSequenceKeypoint.new(0.30, Color3.fromRGB(55, 255, 0)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(0, 255, 102)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(0.60, Color3.fromRGB(0, 102, 255)), ColorSequenceKeypoint.new(0.70, Color3.fromRGB(51, 0, 255)), ColorSequenceKeypoint.new(0.80, Color3.fromRGB(204, 0, 255)), ColorSequenceKeypoint.new(0.90, Color3.fromRGB(255, 0, 153)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 4))},
 			Rotation = 90,
 			Parent = outline4
 		}
@@ -3683,8 +3683,8 @@ function sections:colorpicker(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0.5,0.5),
-			BackgroundColor3 = Color3.fromRGB(0, 0, 0),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(0,12,0,6),
@@ -3698,7 +3698,7 @@ function sections:colorpicker(props)
 		"Frame",
 		{
 			BackgroundColor3 = Color3.fromHSV(h,1,1),
-			BorderColor3 = Color3.fromRGB(0, 0, 0),
+			BorderColor3 = Color3.fromRGB(255, 255, 255),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -3724,8 +3724,8 @@ function sections:colorpicker(props)
 		local outline5 = utility.new(
 			"Frame",
 			{
-				BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-				BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+				BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+				BorderColor3 = Color3.fromRGB(12, 12, 12),
 				BorderMode = "Inset",
 				BorderSizePixel = 1,
 				Position = UDim2.new(0,0,0,0),
@@ -3738,8 +3738,8 @@ function sections:colorpicker(props)
 		local outline6 = utility.new(
 			"Frame",
 			{
-				BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-				BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+				BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+				BorderColor3 = Color3.fromRGB(56, 56, 56),
 				BorderMode = "Inset",
 				BorderSizePixel = 1,
 				Position = UDim2.new(0,0,0,0),
@@ -3753,7 +3753,7 @@ function sections:colorpicker(props)
 			"Frame",
 			{
 				AnchorPoint = Vector2.new(0,0),
-				BackgroundColor3 = Color3.fromRGB(255-30, 255-30, 255-30),
+				BackgroundColor3 = Color3.fromRGB(30, 30, 30),
 				BorderSizePixel = 0,
 				Size = UDim2.new(1,0,0,0),
 				Position = UDim2.new(0,0,0,0),
@@ -3765,7 +3765,7 @@ function sections:colorpicker(props)
 		utility.new(
 			"UIGradient",
 			{
-				Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255-199, 255-191, 255-204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))},
+				Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 191, 204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))},
 				Rotation = 90,
 				Parent = color2
 			}
@@ -3778,10 +3778,10 @@ function sections:colorpicker(props)
 				BackgroundTransparency = 1,
 				Size = UDim2.new(1,0,1,0),
 				Position = UDim2.new(0.5,0,0,0),
-				PlaceholderColor3 = Color3.fromRGB(0, 0, 0),
+				PlaceholderColor3 = Color3.fromRGB(255,255,255),
 				PlaceholderText = "",
 				Text = "",
-				TextColor3 = Color3.fromRGB(0, 0, 0),
+				TextColor3 = Color3.fromRGB(255,255,255),
 				TextSize = self.library.textsize,
 				TextStrokeTransparency = 0,
 				Font = self.library.font,
@@ -3798,7 +3798,7 @@ function sections:colorpicker(props)
 				Size = UDim2.new(1,0,1,0),
 				Position = UDim2.new(0,0,0,0),
 				Text = "",
-				TextColor3 = Color3.fromRGB(0, 0, 0),
+				TextColor3 = Color3.fromRGB(255,255,255),
 				TextSize = self.library.textsize,
 				TextStrokeTransparency = 0,
 				Font = self.library.font,
@@ -3932,13 +3932,13 @@ function sections:colorpicker(props)
 					red[2].PlaceholderText = "R: "..tostring(saved)
 				end
 				colorpicker:set(Color3.fromRGB(tonumber(saved),colorpicker.current.G*255,colorpicker.current.B*255))
-				red[3].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+				red[3].BorderColor3 = Color3.fromRGB(12,12,12)
 			else
-				red[3].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+				red[3].BorderColor3 = Color3.fromRGB(12,12,12)
 			end
 		else
 			red[2].Text = ""
-			red[3].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+			red[3].BorderColor3 = Color3.fromRGB(12,12,12)
 		end
 	end)
 	--
@@ -3957,13 +3957,13 @@ function sections:colorpicker(props)
 					green[2].PlaceholderText = "G: "..tostring(saved)
 				end
 				colorpicker:set(Color3.fromRGB(colorpicker.current.R*255,tonumber(saved),colorpicker.current.B*255))
-				green[3].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+				green[3].BorderColor3 = Color3.fromRGB(12,12,12)
 			else
-				green[3].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+				green[3].BorderColor3 = Color3.fromRGB(12,12,12)
 			end
 		else
 			green[2].Text = ""
-			green[3].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+			green[3].BorderColor3 = Color3.fromRGB(12,12,12)
 		end
 	end)
 	--
@@ -3982,13 +3982,13 @@ function sections:colorpicker(props)
 					blue[2].PlaceholderText = "B: "..tostring(saved)
 				end
 				colorpicker:set(Color3.fromRGB(colorpicker.current.R*255,colorpicker.current.G*255,tonumber(saved)))
-				blue[3].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+				blue[3].BorderColor3 = Color3.fromRGB(12,12,12)
 			else
-				blue[3].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+				blue[3].BorderColor3 = Color3.fromRGB(12,12,12)
 			end
 		else
 			blue[2].Text = ""
-			blue[3].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+			blue[3].BorderColor3 = Color3.fromRGB(12,12,12)
 		end
 	end)
 	--
@@ -4007,18 +4007,18 @@ function sections:colorpicker(props)
 				if hexcolor then
 					colorpicker:set(hexcolor)
 					hex[2].Text = ""
-					hex[3].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+					hex[3].BorderColor3 = Color3.fromRGB(12,12,12)
 				else
 					hex[2].Text = ""
-					hex[3].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+					hex[3].BorderColor3 = Color3.fromRGB(12,12,12)
 				end
 			else
 				hex[2].Text = ""
-				hex[3].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+				hex[3].BorderColor3 = Color3.fromRGB(12,12,12)
 			end
 		else
 			hex[2].Text = ""
-			hex[3].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+			hex[3].BorderColor3 = Color3.fromRGB(12,12,12)
 		end
 	end)
 	--
@@ -4098,8 +4098,8 @@ function sections:configloader(props)
 	local outline = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12,255-12,255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -4110,8 +4110,8 @@ function sections:configloader(props)
 	local outline2 = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -4127,7 +4127,7 @@ function sections:configloader(props)
 			Position = UDim2.new(0,0,0,3),
 			Font = self.library.font,
 			Text = "configs",
-			TextColor3 = Color3.fromRGB(0, 0, 0),
+			TextColor3 = Color3.fromRGB(255,255,255),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Center",
@@ -4142,7 +4142,7 @@ function sections:configloader(props)
 		{
 			AnchorPoint = Vector2.new(0.5,0),
 			BackgroundColor3 = self.library.theme.accent,
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,-6,0,1),
@@ -4168,8 +4168,8 @@ function sections:configloader(props)
 		"Frame",
 		{
 			AnchorPoint = Vector2.new(0.5,0),
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,-10,0,120),
@@ -4181,8 +4181,8 @@ function sections:configloader(props)
 	local outline3 = utility.new(
 		"Frame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-			BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+			BorderColor3 = Color3.fromRGB(56, 56, 56),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
 			Size = UDim2.new(1,0,1,0),
@@ -4194,7 +4194,7 @@ function sections:configloader(props)
 	local outline4 = utility.new(
 		"ScrollingFrame",
 		{
-			BackgroundColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+			BackgroundColor3 = Color3.fromRGB(56, 56, 56),
 			BackgroundTransparency = 1,
 			BorderSizePixel = 0,
 			Size = UDim2.new(1,0,1,0),
@@ -4203,7 +4203,7 @@ function sections:configloader(props)
 			AutomaticCanvasSize = "Y",
 			CanvasSize = UDim2.new(0,0,0,0),
 			ScrollBarImageTransparency = 0.25,
-			ScrollBarImageColor3 = Color3.fromRGB(255, 255, 255),
+			ScrollBarImageColor3 = Color3.fromRGB(0,0,0),
 			ScrollBarThickness = 5,
 			VerticalScrollBarInset = "ScrollBar",
 			VerticalScrollBarPosition = "Right",
@@ -4240,7 +4240,7 @@ function sections:configloader(props)
 			"Frame",
 			{
 				AnchorPoint = Vector2.new(0.5,0),
-				BackgroundColor3 = Color3.fromRGB(255-125, 255-125, 255-125),
+				BackgroundColor3 = Color3.fromRGB(125, 125, 125),
 				BackgroundTransparency = 0.9,
 				BorderSizePixel = 0,
 				Size = UDim2.new(1,-4,1,0),
@@ -4259,7 +4259,7 @@ function sections:configloader(props)
 				Position = UDim2.new(0.5,0,0,0),
 				Font = self.library.font,	
 				Text = name,
-				TextColor3 = Color3.fromRGB(0, 0, 0),
+				TextColor3 = Color3.fromRGB(255,255,255),
 				TextSize = self.library.textsize,
 				TextStrokeTransparency = 0,
 				TextXAlignment = "Left",
@@ -4289,7 +4289,7 @@ function sections:configloader(props)
 			for i,v in pairs(createdbuttons) do
 				if v ~= createdb then
 					v.grey.Visible = false
-					v.title.TextColor3 = Color3.fromRGB(0, 0, 0)
+					v.title.TextColor3 = Color3.fromRGB(255,255,255)
 					local find = table.find(self.library.themeitems["accent"]["TextColor3"],v.title)
 					if find then
 						table.remove(self.library.themeitems["accent"]["TextColor3"],find)
@@ -4318,8 +4318,8 @@ function sections:configloader(props)
 		local button_outline = utility.new(
 			"Frame",
 			{
-				BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-				BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+				BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+				BorderColor3 = Color3.fromRGB(12, 12, 12),
 				BorderMode = "Inset",
 				BorderSizePixel = 1,
 				Position = UDim2.new(0,0,0,0),
@@ -4332,8 +4332,8 @@ function sections:configloader(props)
 		local button_outline2 = utility.new(
 			"Frame",
 			{
-				BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-				BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+				BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+				BorderColor3 = Color3.fromRGB(56, 56, 56),
 				BorderMode = "Inset",
 				BorderSizePixel = 1,
 				Position = UDim2.new(0,0,0,0),
@@ -4347,7 +4347,7 @@ function sections:configloader(props)
 			"Frame",
 			{
 				AnchorPoint = Vector2.new(0,0),
-				BackgroundColor3 = Color3.fromRGB(255-30, 255-30, 255-30),
+				BackgroundColor3 = Color3.fromRGB(30, 30, 30),
 				BorderSizePixel = 0,
 				Size = UDim2.new(1,0,0,0),
 				Position = UDim2.new(0,0,0,0),
@@ -4359,7 +4359,7 @@ function sections:configloader(props)
 		utility.new(
 			"UIGradient",
 			{
-				Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255-199, 255-191, 255-204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))},
+				Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 191, 204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))},
 				Rotation = 90,
 				Parent = button_color
 			}
@@ -4373,7 +4373,7 @@ function sections:configloader(props)
 				Size = UDim2.new(1,0,1,0),
 				Position = UDim2.new(0,0,0,0),
 				Text = name,
-				TextColor3 = Color3.fromRGB(0, 0, 0),
+				TextColor3 = Color3.fromRGB(255,255,255),
 				TextSize = self.library.textsize,
 				TextStrokeTransparency = 0,
 				Font = self.library.font,
@@ -4401,8 +4401,8 @@ function sections:configloader(props)
 		local outline5 = utility.new(
 			"Frame",
 			{
-				BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-				BorderColor3 = Color3.fromRGB(255-12, 255-12, 255-12),
+				BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+				BorderColor3 = Color3.fromRGB(12, 12, 12),
 				BorderMode = "Inset",
 				BorderSizePixel = 1,
 				Position = UDim2.new(0,0,0,0),
@@ -4415,8 +4415,8 @@ function sections:configloader(props)
 		local outline6 = utility.new(
 			"Frame",
 			{
-				BackgroundColor3 = Color3.fromRGB(255-24, 255-24, 255-24),
-				BorderColor3 = Color3.fromRGB(255-56, 255-56, 255-56),
+				BackgroundColor3 = Color3.fromRGB(24, 24, 24),
+				BorderColor3 = Color3.fromRGB(56, 56, 56),
 				BorderMode = "Inset",
 				BorderSizePixel = 1,
 				Position = UDim2.new(0,0,0,0),
@@ -4430,7 +4430,7 @@ function sections:configloader(props)
 			"Frame",
 			{
 				AnchorPoint = Vector2.new(0,0),
-				BackgroundColor3 = Color3.fromRGB(255-30, 255-30, 255-30),
+				BackgroundColor3 = Color3.fromRGB(30, 30, 30),
 				BorderSizePixel = 0,
 				Size = UDim2.new(1,0,0,0),
 				Position = UDim2.new(0,0,0,0),
@@ -4442,7 +4442,7 @@ function sections:configloader(props)
 		utility.new(
 			"UIGradient",
 			{
-				Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255-199, 255-191, 255-204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))},
+				Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 191, 204)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))},
 				Rotation = 90,
 				Parent = color2
 			}
@@ -4455,10 +4455,10 @@ function sections:configloader(props)
 				BackgroundTransparency = 1,
 				Size = UDim2.new(1,0,1,0),
 				Position = UDim2.new(0.5,0,0,0),
-				PlaceholderColor3 = Color3.fromRGB(255-178, 255-78, 255-178),
+				PlaceholderColor3 = Color3.fromRGB(178, 178, 178),
 				PlaceholderText = "",
 				Text = "",
-				TextColor3 = Color3.fromRGB(0, 0, 0),
+				TextColor3 = Color3.fromRGB(255,255,255),
 				TextSize = self.library.textsize,
 				TextStrokeTransparency = 0,
 				Font = self.library.font,
@@ -4475,7 +4475,7 @@ function sections:configloader(props)
 				Size = UDim2.new(1,0,1,0),
 				Position = UDim2.new(0,0,0,0),
 				Text = "",
-				TextColor3 = Color3.fromRGB(0, 0, 0),
+				TextColor3 = Color3.fromRGB(255,255,255),
 				TextSize = self.library.textsize,
 				TextStrokeTransparency = 0,
 				Font = self.library.font,
@@ -4554,21 +4554,21 @@ function sections:configloader(props)
 			name[2].Text = ""
 			currentname = nil
 		end
-		name[3].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+		name[3].BorderColor3 = Color3.fromRGB(12,12,12)
 	end)
 	--
 	load[3].MouseButton1Down:Connect(function()
 		self.library:loadconfig(folder..selected.name..".cfg")
 		load[2].BorderColor3 = self.library.theme.accent
 		wait(0.05)
-		load[2].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+		load[2].BorderColor3 = Color3.fromRGB(12,12,12)
 	end)
 	--
 	delete[3].MouseButton1Down:Connect(function()
 		delfile(folder..selected.name..".cfg")
 		delete[2].BorderColor3 = self.library.theme.accent
 		wait(0.05)
-		delete[2].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+		delete[2].BorderColor3 = Color3.fromRGB(12,12,12)
 		wait()
 		refresh()
 	end)
@@ -4577,7 +4577,7 @@ function sections:configloader(props)
 		writefile(folder..selected.name..".cfg", self.library:saveconfig())
 		save[2].BorderColor3 = self.library.theme.accent
 		wait(0.05)
-		save[2].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+		save[2].BorderColor3 = Color3.fromRGB(12,12,12)
 		wait()
 		refresh()
 	end)
@@ -4586,7 +4586,7 @@ function sections:configloader(props)
 		writefile(folder..currentname..".cfg", self.library:saveconfig())
 		create[2].BorderColor3 = self.library.theme.accent
 		wait(0.05)
-		create[2].BorderColor3 = Color3.fromRGB(255-12,255-12,255-12)
+		create[2].BorderColor3 = Color3.fromRGB(12,12,12)
 		wait()
 		refresh()
 	end)

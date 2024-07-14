@@ -2422,7 +2422,7 @@ function sections:buttonbox(props)
 			Position = UDim2.new(0,0,0,0),
 			Font = self.library.font,
 			Text = name,
-			TextColor3 = Color3.fromRGB((0, 0, 0)),
+			TextColor3 = Color3.fromRGB(0, 0, 0),
 			TextSize = self.library.textsize,
 			TextStrokeTransparency = 0,
 			TextXAlignment = "Left",
